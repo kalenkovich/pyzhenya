@@ -10,7 +10,12 @@ $ pip install pyzhenya
 
 ## Usage
 
-- TODO
+Create an `.ico` icon image file of an emoji:
+
+```python
+from pyzhenya.pyzhenya import text_to_image_file
+text_to_image_file('🐍', 'snake.ico')
+```
 
 ## Contributing
 
