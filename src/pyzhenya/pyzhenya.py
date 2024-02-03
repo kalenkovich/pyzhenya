@@ -6,8 +6,8 @@ from typing import Union
 from PIL import Image, ImageDraw, ImageFont
 
 
-def text_to_image(text: str) -> Image:
-    """Creates a PIL.Image with the given text, transparent background, and minimal padding."""
+def text_to_image(text: str) -> Image.Image:
+    """Creates a PIL image object with the given text, transparent background, and minimal padding."""
     font = ImageFont.truetype('seguiemj.ttf', size=250, encoding='unic')
     (left, top, right, bottom) = font.getbbox(text)
     text_width = right - left
